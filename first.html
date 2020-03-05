@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>学生信息</h1>
+    <fieldset style="width:600px;height:570px;">
+        <legend style="color:red;">学生档案</legend>
+        <form>
+            <p>姓名：</p>
+            <input type="text" style="width:580px;height:20px;" name="sname" required placeholder="请输入姓名">
+            <div style="color:red; display:inline-block;font-size: 10px;">*</div>
+            <p>学号：</p>
+            <input type="text" style="width:580px;height:20px;" name="snum1" required placeholder="请输入学号">
+            <div style="color:red; display:inline-block;font-size: 10px;">*</div>
+            <p>手机号码：</p>
+            <input type="tel" style="width:580px;height:20px;" name="stel" required placeholder="请输入手机号">
+            <div style="color:red; display:inline-block;font-size: 10px;">*</div>
+            <p>邮箱地址：：</p>
+            <input type="email" style="width:580px;height:20px;" name="semail" required placeholder="请输入邮箱地址">
+            <div style="color:red; display:inline-block;font-size: 10px;">*</div>
+            <p>录取学校：</p>
+            <input type="search" style="width:580px;" name="sch" list="school">
+            <datalist id="school">
+                <option>河北师范大学</option>
+                <option>河北大学</option>
+                <option>北京邮政大学</option>
+                <option>北京理工大学</option>
+                <option>北京航空航天大学</option>
+            </datalist>
+            <p>入学成绩：</p>
+            <input type="number" min="0" max="750" style="width:580px;height:20px;" name="snum2">
+            <p>入学时间：</p>
+            <input type="date" style="width:580px;" name="time">
+            <div style="margin-top:23px;">
+                <input type="submit" style="width:580px;height:25px; font-size:12px" value="提交">
+            </div>
+        </form>
+    </fieldset>
+</body>
+
+</html>
